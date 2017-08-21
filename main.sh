@@ -1,9 +1,9 @@
 #!/bin/bash
 mkdir "tmp"
+
+cp $1 "tmp/tmp.zip"
+
 cd "tmp"
-
-cp $1 "tmp.zip"
-
 mkdir "tmp"
 unzip -q "tmp.zip" -d "tmp"
 rm -rf "tmp.zip"
